@@ -25,7 +25,7 @@ The dataset consists of text descriptions related to sexual harassment incidents
 The model's performance is evaluated using accuracy, precision, recall, and Hamming loss metrics. These metrics provide insights into the model's classification performance across different labels. in multilabel classification we have used 2 model - decision tree and random forest.
 
 #**Results:**
-The prediction results are saved in a CSV file named predictions_<model_name>.csv. This file contains the predicted labels for the test dataset for differnt models. a simple shap visualization has also been done.
+The prediction results are saved in a CSV file named predictions_<model_name>.csv. This file contains the predicted labels for the test dataset for differnt models. a simple lime visualization has also been done.
 
 #**deployment video:**
 demo - https://drive.google.com/file/d/13xuDGcdqhz3DFwWFgSHYWjJ3Fe8OuRkk/view?usp=sharing
