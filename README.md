@@ -14,7 +14,7 @@ Run the Jupyter notebook multilabel.ipynb to train and evaluate the model.
 
 Alternatively, you can directly run the Python script multilabel.py:
 
-'''bash python multilabel.py'''
+bash python multilabel.py
 
 we have also added the codefile for binarylabel classification of data as binary.ipynb.
 
@@ -24,11 +24,13 @@ The dataset consists of text descriptions related to sexual harassment incidents
 #**Model Evaluation** :
 The model's performance is evaluated using accuracy, precision, recall, and Hamming loss metrics. These metrics provide insights into the model's classification performance across different labels. in multilabel classification we have used 2 model - decision tree and random forest.
 
-#**Results **
+#**Results:**
 The prediction results are saved in a CSV file named predictions_<model_name>.csv. This file contains the predicted labels for the test dataset for differnt models. a simple shap visualization has also been done.
 
 #**deployment video:**
-https://drive.google.com/file/d/13bpt4GMByThQ7uTK8e8lOEAAe56dE_KQ/view?usp=sharing
+demo - https://drive.google.com/file/d/13xuDGcdqhz3DFwWFgSHYWjJ3Fe8OuRkk/view?usp=sharing
+deployment - https://drive.google.com/file/d/13bpt4GMByThQ7uTK8e8lOEAAe56dE_KQ/view?usp=sharing
+
 
 
 # ML-MODEL-DEPLOYMENT-USING-FLASK
