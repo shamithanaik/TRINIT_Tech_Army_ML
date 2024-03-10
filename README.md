@@ -35,4 +35,6 @@ Results
 The prediction results are saved in a CSV file named predictions_<model_name>.csv. This file contains the predicted labels for the test dataset for differnt models.
 a simple shap visualization has also been done.
 
+deployment video:
+https://drive.google.com/file/d/13bpt4GMByThQ7uTK8e8lOEAAe56dE_KQ/view?usp=sharing
 
