@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  
+</head>
+
+<body>
+ <div class="login" style="background-color:navy; align-items:center; color:white;">
+	<h1 style="font-weight:bold;color:white;">Using Random Forest Classifier</h1>
+
+    
+    <form action="{{ url_for('predict')}}"method="post">
+      <h1>Sexual assault predictor for Multi class classification</h1>
+    	<input type="text" name="Comment" placeholder="Enter the sexual assault faced by you" required="required" style="background-color:whitesmoke;"/>
+      <p style="color:whitesmoke">Commenting,Facial Expressions,Touching</p>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large" style="background-color:green;border-width:0px;border-radius:12px;padding:14px;margin:10px;">Predict</button>
+    </form>
+    <form action="{{ url_for('predict_1')}}"method="post">
+      <h1>Sexual assault predictor for Binary Classification</h1>
+    	<input type="text" name="Comment_1" placeholder="Enter the assault faced by you" required="required" style="background-color:whitesmoke;" />
+      <p>sexual and Non-sexual</p>
+      <label for="dropdown">Select an Option:</label>
+      <select id="dropdown" name="option" >
+          <option value="option1">Random Forest</option>
+          <option value="option2">Decision Tree</option>
+          <option value="option3">Support Vector Machine</option>
+          
+      </select>
+      <button type="submit" class="btn btn-primary btn-block btn-large" style="background-color:green;border-width:0px;border-radius:12px; color:white;padding:14px; margin:10px;">Predict</button>
+    </form>
+    
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
